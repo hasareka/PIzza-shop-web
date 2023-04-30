@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<title>Menu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../Styles/styles.css">
+<style>
+*{box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+header {
+  
+  background-image:url(../Images/order.png);
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:200px;
+  padding: 30px;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+  background-color:#2F3036;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  width: 25%; 
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #65BFB2;
+}
+
+.navbar a.active {
+  background-color: #84C4E5;
+}
+.pizza{
+	width: 100%;
+	height: 165vh;
+			
+}
+.appetizer{
+	width: 100%;
+			height: 105vh;
+			
+}
+.desserts{
+	width: 100%;
+			height: 60vh;
+			
+}
+.pasta{
+	width: 100%;
+			height: 100vh;
+			
+}
+ table,td,{
+	border:1px white;
+}
+table{
+	border-collapse:collapse;
+	width:100%;
+	
+}
+td {
+  padding:15px;	
+  text-align: left;
+  
+}
+span{
+	font-size:15px;
+	color:red;
+	text-align:right;
+	font-style:italic;
+}
+.appetizer h1,.desserts h1, .pasta h1{
+	background-color:#65BFB2;
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+<body>
+<header>
+<a href="../Web/Home.html">
+	<img src="..\Images\logo.png" alt="logo" height="150px" align="left">
+	</a>
+	OUR MENU
+</header>
+<br>
+
+<div class="navbar">
+  <a class="active" href="#">Pizza</a> 
+  <a href="#1">Appetizer</a>
+  <a href="#2">Desserts</a> 
+  <a href="#3">Pasta</a>
+</div>
+<div class="pizza" >
+<br><br><br>
+	<table>
+		<tr>
+			<td>
+				<img src="../Images/pizza/bbq.png" width="200px"><br>
+				<h3>Chicken BBQ &emsp;&emsp;&emsp;
+				<span>LKR 2,049.00</span></h3>
+				<p>BBQ chicken accompanied by onions and a double layer of mozzarella cheese</p>
+			</td>
+			<td>
+				<img src="../Images/pizza/currychicken.png" width="200px">
+				<h3>Curry Chicken&emsp;&emsp;&emsp;
+				<span>LKR 1,850.00</span></h3>
+				<p>Spicy chunks of chicken, capsicums & onions with a double layer of mozzarella cheese.</p>
+			</td>
+			<td>
+				<img src="../Images/pizza/vegi.png" width="200px">
+				<h3>Veggie lovers&emsp;&emsp;&emsp;
+				<span>LKR 1,749.00</span></h3>
+				<p>Mushrooms, tomatoes, onions, black olives and bell peppers with a double layer of mozzarella cheese.</p>
+			</td>
+			<td>
+				<img src="../Images/pizza/sausage.png" width="200px">
+				<h3>Sausage lovers&emsp;&emsp;
+				<span>LKR 1,849.00</span></h3>
+				<p>Chicken sausages & onions with a double layer of mozzarella cheese.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="../Images/pizza/paneermasala.png" width="200px"><br>
+				<h3>Paneer Masala&emsp;&emsp;&emsp;
+				<span>LKR 2,299.00</span></h3>
+				<p>Paneer, button mushroom and bell pepper with a double layer of mozzarella cheese.</p>
+			</td>
+			<td>
+				<img src="../Images/pizza/seafood.png" width="200px">
+				<h3>Sea Food&emsp;&emsp;&emsp;
+				<span>LKR 2,000.00</span></h3>
+				<p>Prawns, cuttlefish, crab stick, capsicum, onions & olives with mozzarella cheese</p>
+			</td>
+			<td>
+				<img src="../Images/pizza/creamy.png" width="200px">
+				<h3>Creamy Chicken&emsp;&emsp;&emsp;
+				<span>LKR 2,199.00</span></h3>
+				<p>Tandoori chicken & onions with a double layer of mozzarella cheese.</p>
+			</td>
+			<td>
+				<img src="../Images/pizza/cheese.png" width="200px">
+				<h3>Cheese Lovers&emsp;&emsp;
+				<span>LKR 2,149.00</span></h3>
+				<p>Rich tomato sauce with a triple layer of mozzarella cheese.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="../Images/pizza/hell.png" width="200px"><br>
+				<h3>Chicken Hellfire&emsp;&emsp;&emsp;
+				<span>LKR 2,500.00</span></h3>
+				<p>Chicken, nai miris, onions, curry leaves with mozzarella cheese.</p>
+			</td>
+			<td>
+				<img src="../Images/pizza/moon.png" width="200px">
+				<h3>Full Moon&emsp;&emsp;&emsp;
+				<span>LKR 2,100.00</span></h3>
+				<p>Chicken bacon, button mushroom, Cheese sauce with mozzarella cheese.</p>
+			</td>
+			<td>
+				<img src="../Images/pizza/margherita.png" width="200px">
+				<h3>Margherita Pizza&emsp;&emsp;&emsp;
+				<span>LKR 1,800.00</span></h3>
+				<p>Tomato & parmesan with mozzarella cheese.</p>
+			</td>
+			<td>
+				<img src="../Images/pizza/cheese.png" width="200px">
+				<h3>Cheese Lovers&emsp;&emsp;
+				<span>LKR 2,450.00</span></h3>
+				<p>Mutton , green chilli, tomato,onions & mozzarella.</p>
+			</td>
+		</tr>
+		
+	</table>
+</div>
+	
+</div>
+<div class="appetizer"id="1">
+	<h1><center>Appetizer</center></h1>
+	<table>
+		<tr>
+			<td>
+				<img src="../Images/Appetizer/1.png" width="200px"><br>
+				<h3>Garlic Roast Bread&emsp;&emsp;
+				<span>LKR 399.00</span></h3>
+				<p>Flat roasted bread with garlic butter & parsley.</p>
+			</td>
+			<td>
+				<img src="../Images/Appetizer/2.png" width="200px"><br>
+				<h3>Cheese Garlic Bread&emsp;&emsp;
+				<span>LKR 599.00</span></h3>
+				<p>Flat roasted bread with mozzarella,<br> garlic butter & parsley.</p>
+			</td>
+			<td>
+				<img src="../Images/Appetizer/3.png" width="200px"><br>
+				<h3>French Fries&emsp;&emsp;&emsp;
+				<span>LKR 649.00</span></h3>
+				<p></p>
+			</td>
+			<td>
+				<img src="../Images/Appetizer/4.png" width="200px"><br>
+				<h3>Machos &emsp;&emsp;
+				<span>LKR 699.00</span></h3>
+				<p>Manyokka chips, Tomato Salsa & mozzarella.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="../Images/Appetizer/5.png" width="200px"><br>
+				<h3>Spicy Sausages &emsp;&emsp;
+				<span>LKR 799.00</span></h3>
+				<p></p>
+			</td>
+			<td>
+				<img src="../Images/Appetizer/6.png" width="200px"><br>
+				<h3>Spicy French Fries &emsp;&emsp;
+				<span>LKR 799.00</span></h3>
+				<p></p>
+			</td>
+		</tr>
+	</table>
+</div>
+<div class="desserts"id="2">
+	<h1><center>Desserts</center></h1>
+	<table>
+		<tr>
+			<td>
+				<img src="../Images/Desserts/4.png" width="200px"><br><br><br>
+				<h3>Choco Bread &emsp;&emsp;
+				<span>LKR 349.00</span></h3>
+				<p>Chocolate chips and chocolate sauce in a tasty oven baked bread</p>
+			</td>
+			<td>
+				<img src="../Images/Desserts/1.jpeg" width="200px"><br>
+				<h3>Cinnamon Rolls(2)&emsp;&emsp;&emsp;
+				<span>LKR 260.00</span></h3>
+				<p>Swirls made of authentic cinnamon powder topped with a tantalizing icing sugar glaze with cream cheese.</p>
+			</td>
+			<td>
+				<img src="../Images/Desserts/2.jpg" width="200px"><br>
+				<h3> Lava Cake &emsp;&emsp;
+				<span>LKR 310.00</span></h3>
+				<p>Soft, moist chocolate cake with a burst of thick, hot liquid chocolate inside.</p>
+			</td>
+			<td>
+				<img src="../Images/Desserts/3.jpeg" width="200px"><br>
+				<h3>Choco Delights(2)  &emsp;&emsp;
+				<span>LKR 390.00</span></h3>
+				<p>A tempting delicacy made with chocolate chips and topped with rich chocolate sause.</p>
+			</td>
+		</tr>
+	</table>
+</div>
+<div class="pasta"id="3">
+	<h1><center>Pasta</center></h1>
+	<table>
+		<tr>
+			<td>
+				<img src="../Images/pasta/1.png" width="200px"><br>
+				<h3>Spicy Chicken&emsp;&emsp;&emsp;
+				<span>LKR 1,349.00</span></h3>
+				<p>Chicken, onions & parmesan cheese in light tomato sauce.</p>
+			</td>
+			<td>
+				<img src="../Images/pasta/2.png" width="200px"><br>
+				<h3>Chicken Bacon&emsp;&emsp;
+				<span>LKR 1,599.00</span></h3>
+				<p>Bacon, olives & parmesan cheese in Tomato sauce.</p>
+			</td>
+			<td>
+				<img src="../Images/pasta/3.png" width="200px"><br>
+				<h3>Spicy Veggie&emsp;&emsp;&emsp;
+				<span>LKR 1,299.00</span></h3>
+				<p>Mushroom, black olives, tomato, Bell pepper & parmesan cheese In light tomato sauce.</p>
+			</td>
+			<td>
+				<img src="../Images/pasta/4.png" width="200px"><br>
+				<h3>Spicy Prawns&emsp;&emsp;&emsp;
+				<span>LKR 1,999.00</span></h3>
+				<p>Prawns, green chili, black olives, tomato, Basil, & parmesan cheese in light tomato sauce.</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="../Images/pasta/1.png" width="200px"><br>
+				<h3>Creamy Prawns&emsp;&emsp;&emsp;
+				<span>LKR 1,699.00</span></h3>
+				<p>Prawns, mushroom with creamy cheese.</p>
+			</td>
+		</tr>
+	</table>
+	
+
+</div>
+<br>
+
+<footer>
+	<a href="../Web/Home.html">
+	<h1 style=color:white>PANO'S PIZZA</h1></a>
+	<br><br>
+	<p>
+		<img src="..\Images\icons\phone.png"> &emsp; +94 112 123 456
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<img src="..\Images\icons\time.png"> &emsp; Hours 9am to 10pm
+	</p>
+	<br>
+		
+	<p>
+		
+		<a href="facebook.com" target="_blank"><img src="..\Images\icons\facebook.png" width="20"></a>&emsp;&emsp;
+		<a href="instagram.com" target="_blank"><img src="..\Images\icons\instagram.png"width="20"></a>
+	</p>
+	<br><br>
+	<p>Copyright © 2021 PANO'S PIZZA. All Rights Reseverd</p>
+</footer>
+</body>
+</html> 

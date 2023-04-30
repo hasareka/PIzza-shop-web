@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	
+	<style>
+		
+
+		body{
+			font-family:arial;
+			background-color:white;
+		}
+		header {
+  
+		  background-image:url(../Images/order.png);
+		  background-repeat:no-repeat;
+		  background-size:cover;
+		  height:200px;
+		  padding: 30px;
+		  text-align: center;
+		  font-size: 60px;
+		  color: white;
+		}
+
+		
+	  .leftdiv
+         {
+         float: left;
+		 border: 1px solid #ccc;		 
+		 width:45%;
+		 height:750px;
+		 padding:15px;
+		 background-color:#EAECEE;
+		 
+		 
+         }
+        
+        .rightdiv
+         {
+		
+         float: right;
+		 width:45%;
+		 border: 1px solid #ccc;
+		 padding:15px;
+		 height:750px;
+		 background-color:#EAECEE;
+		 
+         }
+		 
+         
+		 
+		 input[type=text],input[type=email],input[type=date], select, textarea {
+		  width: 100%;
+		  padding: 12px;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  resize: vertical;
+		}
+
+		label {
+		  padding: 12px 12px 12px 0;
+		  display: inline-block;
+		}
+
+		input[type=submit] {
+		  background-color: #04AA6D;
+		  color: white;
+		  padding: 12px 20px;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		  float: right;
+		}
+				
+		.col-25 {
+		  float: left;
+		  width: 25%;
+		  margin-top: 6px;
+		}
+
+		.col-75 {
+		  float: left;
+		  width: 50%;
+		  margin-top: 6px;
+		}
+
+		
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+		p{
+			color:#363838;
+		}
+		label{
+			color:#363838;
+		}
+
+		
+		@media screen and (max-width: 600px) {
+		  .col-25, .col-75, input[type=submit] {
+			width: 100%;
+			margin-top: 0;
+		  }
+		}
+	</style>
+</head>
+<body>
+	<header>
+	<a href="../Web/Home.html">
+	<img src="..\Images\logo.png" alt="logo" height="150px" align="left">
+	</a>
+	<br>
+		Contact Us
+	</header>
+	<br>
+	<div class="leftdiv">
+		<h2><center>Talk to Us</center></h2>
+		
+		
+		
+		<form action="action.php" method="post">
+			<div class="row">
+				<div class="col-25">
+					<label>Subject</label>
+				</div>
+				<div class="col-75">
+					<select id="subject" name="subject">
+						<option value="sel" selected>Select an option</option>
+						<option value="Complain">complain</option>
+						<option value="feedback">Feedback</option>
+					</select><br><br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label>Name</label>
+				</div>
+			
+				<div class="col-75">
+					<input type="text" id="name" name="name"><br><br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-25">
+					<label>Email</label>
+				</div>
+			
+				<div class="col-75">
+					<input type="email" id="email" name="email"><br><br>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-25">
+					<label>Phone No</label>
+				</div>
+			
+				<div class="col-75">
+					<input type="text" id="no" name="no"><br><br>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-25">
+					<label>Outlet</label>
+				</div>
+			
+				<div class="col-75">
+				<select id="outlet" name="outlet">
+				<option value="sel" selected>Select an option</option>
+				<option value="ml">Mount Lavinia</option>
+				<option value="Horana">Horana</option>
+				<option value="Kottawa">Yakkala</option>
+				</select><br><br>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-25">
+					<label>Date of visit</label>
+				</div>
+			
+				<div class="col-75">
+					<input type="date" id="date" name="date"><br><br>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-25">
+					<label>Receeipt No</label>
+				</div>
+			
+				<div class="col-75">
+					<input type="text" id="no" name="no"><br><br>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-25">
+					<label>Message</label>
+				</div>
+			
+				<div class="col-75">
+					<textarea id="msg" name="msg" rows="4" cols="50">
+			</textarea><br><br>
+				</div>
+			</div>
+			
+			<div class="row">
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+			
+	</div>		
+			
+			
+	<div class="rightdiv">
+        <h2><center>Contact Info</center></h2>
+		<p><b>Mount Lavinia</b></p>
+		
+		<p><img src="..\Images\icons\location.png">&emsp;123 Galle road Mount Lavinia, Sri Lanka</p>
+		<p><img src="..\Images\icons\time.png">&emsp;9am to 10pm</p>
+		<p><img src="..\Images\icons\phone.png">&emsp;0112234567</p>
+		<br>
+		
+		<p><b>Horana</b></p>
+		<p><img src="..\Images\icons\location.png">&emsp;220 Rathnapura road Horana, Sri Lanka</p>
+		<p><img src="..\Images\icons\time.png">&emsp;9am to 10pm</p>
+		<p><img src="..\Images\icons\phone.png">&emsp;0341234567</p>
+		<br>
+		
+		<p><b>Yakkala</b></p>
+		<p><img src="..\Images\icons\location.png">&emsp;120 Kandy road Yakkala, Sri Lanka</p>
+		<p><img src="..\Images\icons\time.png">&emsp;9am to 10pm</p>
+		<p><img src="..\Images\icons\phone.png">&emsp;0331234567</p>
+		<br>
+		
+    </div>
+	</div>
+	
+	
+</body>
+</html>		
+			
+			
+			
+			
+			
+			
+			
+			
+		
+			 
+			 
+	
+		  
+    
